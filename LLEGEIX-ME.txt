@@ -1,0 +1,51 @@
+1)
+	Per crear i desplaçar-me a la nova branca:
+		
+		git checkout -b branca00
+
+	Per veure l'estat del projecte i la branca actual:
+
+		git status
+
+5)
+
+	Per tornar a la branca main:
+
+		git checkout main
+
+	Per veure la diferencia amb branca00:
+
+		git log branca00...main
+
+6)
+
+	No es pot veure la nova linia afegida a Prjava02.java perque aquest canvi esta a la branca 
+	branca00 i no s'ha fet cap push ni cap merge amb la branca main.
+
+7)
+
+	Si que es pot veure el nou contingut ja que el canvi pertany a aquesta branca.
+
+10-b)
+
+	Per fusionar les dues branques main i branca00:
+
+		git merge branca00
+
+	Ara si que des de main podem veure els canvis al fitxer Prjava02.java
+
+12)
+
+	git push
+
+12-c)
+
+	Perque només hem fet un push de la branca main.
+
+14-a)
+
+	git push --set-upstream origin branca01
+
+14-c)
+
+	Esta a 1 commit
